@@ -49,7 +49,7 @@
                 </configuration>
             </plugin>
 
-            <plugin>
+            <!--plugin>
                 <groupId>sh.tak.appbundler</groupId>
                 <artifactId>appbundle-maven-plugin</artifactId>
                 <version>1.2.0</version>
@@ -57,7 +57,7 @@
                     <mainClass>de.signili.samplecli.Main</mainClass>
                     <jrePath>/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk</jrePath>
                     <bundleName>Signili Sample CLI App</bundleName>
-                    <!--iconFile>icons.icns</iconFile-->
+                    <iconFile>icons.icns</iconFile>
                 </configuration>
                 <executions>
                     <execution>
@@ -67,7 +67,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
 </project>
