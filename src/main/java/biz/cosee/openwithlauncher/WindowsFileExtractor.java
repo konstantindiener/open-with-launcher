@@ -2,6 +2,9 @@ package biz.cosee.openwithlauncher;
 
 import java.io.File;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.Arrays.stream;
 
 public class WindowsFileExtractor implements FileExtractor {
 
@@ -13,7 +16,9 @@ public class WindowsFileExtractor implements FileExtractor {
 
     @Override
     public List<File> listOfFilesPassedToTheApplication() {
-        return null;
+        return stream(commandLineArguments)
+                .map(File::new)
+                .collect(Collectors.toList());
     }
 
     String[] getCommandLineArguments() {
