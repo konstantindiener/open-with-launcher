@@ -57,15 +57,15 @@
                 </configuration>
             </plugin>
 
-            <!--plugin>
+            <plugin>
                 <groupId>sh.tak.appbundler</groupId>
                 <artifactId>appbundle-maven-plugin</artifactId>
                 <version>1.2.0</version>
                 <configuration>
-                    <mainClass>de.signili.samplecli.Main</mainClass>
+                    <mainClass>biz.cosee.openwithlauncher.Main</mainClass>
                     <jrePath>/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk</jrePath>
-                    <bundleName>Signili Sample CLI App</bundleName>
-                    <iconFile>icons.icns</iconFile>
+                    <bundleName>Sample Open File With App</bundleName>
+                    <!--iconFile>icons.icns</iconFile-->
                 </configuration>
                 <executions>
                     <execution>
@@ -75,7 +75,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin-->
+            </plugin>
         </plugins>
     </build>
 </project>
